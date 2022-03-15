@@ -1,0 +1,28 @@
+{% if error %}
+<div> 
+  <strong>Error! <div>Credenciales no válidas.</div> </strong>
+</div>
+{% endif %}
+
+<div>
+<form action="{{ path('login') }}" method="post">
+    
+    <h1>Entrar</h1>
+    <div>
+        
+        <input type="text" id="username" name="_username" placeholder="Email del Usuario..." value="{{ last_username }}"/>
+    </div>
+    <div>       
+        <input type="password" id="password" name="_password" placeholder="Contraseña..."/>
+    </div>
+    
+    <label>
+        <input type="checkbox" name="_remember_me" checked/>
+        Recuerdame
+    </label>
+    <input type="hidden" name="_target_path" value="/cliente"/> 
+
+    <button type="submit">Login</button>
+</form>
+     <a href="{{ path('app_register') }}"><button class="btn2" type="button">Registrarse</button></a>
+    </div>

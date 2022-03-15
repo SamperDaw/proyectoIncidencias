@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 15 mar. 2022, 4:41:52
+    Author     : Usuario
+*/
+#usuario{
+    float: right;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+#foto_usuario{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 0px #FF9934;
+    margin-top: 20px;
+    margin-right: 10px;
+}

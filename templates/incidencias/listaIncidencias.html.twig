@@ -1,0 +1,21 @@
+<section>
+<div >
+    <h1> Lista {{ controller_name }}</h1>
+    <br> 
+    
+{% for incidencia in incidenciaslista %}
+    <div>
+        <div>
+            <div>
+                Incidencia: <a href="{{ path("app_incidencias",{id:incidencia.id}) }}">{{ incidencia.titulo }}</a><br>
+                Fecha:{{ incidencia.fechaCreacion | date("Y-m-d H:i:s")}}
+            </div>
+        </div>
+        <br>
+         Cliente: {{ incidencia.cliente.nombre }} {{ incidencia.cliente.apellidos }}<br>
+        
+    </div>
+{%  endfor %}
+
+<p><a href="{{ path("insertar_incidencia2") }}">Nueva Incidencia</a></p>
+</section>
